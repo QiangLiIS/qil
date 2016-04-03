@@ -10,9 +10,9 @@
 
 <div class="container">
 
-  <h1>ad</h1>
+  <h1>users O</h1>
     <ul>
-    <#list results as x>
+    <#list tests as x>
       <li> ${x} </li>
     </#list>
     </ul>

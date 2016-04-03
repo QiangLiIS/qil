@@ -5,7 +5,9 @@
 </head>
 
 <body>
+
   <#include "nav.ftl">
+
 <div class="jumbotron text-center">
   <div class="container">
     <a href="/" class="lang-logo">

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title> index </title>
+ <link rel="stylesheet" href="stylesheets/editprofile.css">
+<link rel="stylesheet" href="stylesheets/header.css">
+<link rel="stylesheet" href="stylesheets/footer.css">
+</head>
+
+<!-- left: upload picture
+           connect with database
+           refine code, delete useless code		   -->
+
+<body>
+
+<!-- header -->
+
+<header class="page-header">
+
+
+
+             <a href="index.html" ><img src="picture/logo.png" class="header-logo" alt="logo"></a>
+
+		     <nav class="header-nav">
+                 <ul class="header-ul">
+                    <li class="header-li"><a href="recommendation.html">recommended</a></li>
+                    <li class="header-li"><a href="contact.html">contact</a></li>
+                    <li class="download-paper header-li"><a href="userpage.html">username</a>
+                    </li>
+                </ul>
+             </nav>
+
+
+</header>
+
+<!-- header end -->
+
+
+<!-- uaerpage  -->
+<div class="system-container">
+    <h1  >Edit Profile</h1>
+
+    <form class="system-form edit-user">
+        <input type="hidden" name="_csrf" value="UGxYc0dCSWQpHHUGL3IcCTIEDCk.GAtSAlxsNBIScS8xCDodFCwuHQ==">
+		    <div>
+                 <label for="name">username</label>
+                 <input id="name" name="edit-user[name]" class="system-input" type="text" value="test" placeholder="">
+            </div>
+
+
+            <div>
+                 <label>image</label>
+                 <input type="hidden" id="avatar-upload" name="edit-user[avatar]" >
+
+                 <div style="position: relative;">
+	                 <div id="avatar" style="position: relative; z-index: 1;">
+
+	                 </div>
+	                 <div id="avatar_upload_status" class="upload-status upload-area" style=" display:none;">
+		                 <div class="progress pull-left">
+		                  	 <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+		                     </div>
+	                     </div>
+	                 </div>
+                     <div id="html5_1abfqalti1rejmtm1d0f1m0rrp33_container" class="moxie-shim moxie-shim-html5"><input id="html5_1abfqalti1rejmtm1d0f1m0rrp33" type="file"  accept="image/jpeg,image/png"></div>
+			     </div>
+
+                 <div class="uploaded-voice-wp uploaded-cover-wp cf">
+                     <div class="uploaded-voice-cover fl">
+                         <img src="picture/test.jpg" id="id-image-url1-pic" alt="">
+                     </div>
+                 </div>
+            </div>
+
+        <input type="submit" class="btn sumbit_profile" value="Submit"/>
+    </form>
+</div>
+
+<!-- userpage end-->
+
+
+<!-- footer -->
+<footer>
+
+<div >
+
+    <div class="footer">
+
+        <nav class="footer-nav">
+            <div class="policyblock">
+
+                <a href="policy.html" class="policy">Policy</a>
+            </div>
+        </nav>
+
+
+		<div class="logoblock">
+		    <div class="madeblock">
+	             <label class="made">MADE BY AlanZY</label>
+			</div>
+		    </div>
+
+		<div class="addressblock">
+		     <label class="address"> 135 N Bellefield Ave, Pittsburgh, PA 15260 </label>
+		</div>
+
+	</div>
+
+</div>
+</footer>
+<!-- footer end  -->
+
+</body>
+</html>

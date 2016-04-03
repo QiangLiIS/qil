@@ -1,0 +1,38 @@
+body{
+margin:0;
+}
+
+.contact-container{
+width: 100%;
+height:500px;
+margin:0;
+
+}
+
+.contact-img{
+width:100%;
+height:500px;
+}
+.contact-text{
+  position: absolute;
+  bottom: 250px;
+  left: 230px;
+  color: #FFFFFF;
+  font-size: 56px;
+  font-family: Buxton Sketch;
+}
+.footer{
+background-color:#FFFFFE0;	
+}
+
+.policy{
+	color: #000000;
+	
+}
+
+.address{
+	color:#000000;
+}
+.made{
+	color:#000000;
+}

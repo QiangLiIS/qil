@@ -6,7 +6,7 @@ module.exports = function(grunt) {
     distFolder: 'target/classes',
     validation: {
       options: {
-        reset: grunt.option('reset') || false,
+        reset: grunt.option('reset') || true,
         stoponerror: false,
         failHard: true,
         generateReport: true,
@@ -53,15 +53,6 @@ module.exports = function(grunt) {
         }
       }
     },
-    // core: {
-    //   files: [{
-    //     expand: true,
-    //     cwd: 'src/main/resources',
-    //     src: 'public/js/**/*.js',
-    //     dest: "target/classes",
-    //     ext: '.min.js'
-    //   }]
-    // }
     qunit: {
       files: ['<%= testFolder %>/public/**/*.html']
     },
@@ -89,8 +80,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // this would be run by typing "grunt test" on the command line
-  grunt.registerTask('test', ['validation', 'jshint', 'qunit']);
+  grunt.registerTask('test', ['validation', 'jshint']);
 
   // the default task can be run just by typing "grunt" on the command line
-  grunt.registerTask('default', ['jshint'/*, 'validation', /*'qunit', 'concat', 'uglify', 'cssmin'*/]);
+  grunt.registerTask('default', ['validation', 'jshint'/*, 'concat', 'uglify', 'cssmin'*/]);
 };

@@ -1,0 +1,238 @@
+
+
+input, textarea {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+}
+input::-ms-clear, textarea::-ms-clear {
+  display: none;
+}
+
+
+
+
+.div2 {
+  position: absolute;
+  width: 400px;
+  height:430px;
+  background: #919191;
+  margin: 3em auto 4em;
+  cursor: auto;
+  border-radius: 0.25em;
+  margin-left:30%;
+  z-index:3;
+}
+
+
+.cd-form {
+
+  margin: 1.4em 0;
+   padding: 2em;
+
+}
+.cd-form:first-child {
+  margin-top: 0;
+}
+.cd-form:last-child {
+  margin-bottom: 0;
+}
+
+
+.cd-form input {
+  margin: 0;
+  padding: 0;
+  border-radius: 0.25em;
+}
+.cd-form input.full-width {
+  width: 90%;
+}
+.cd-form input.has-padding {
+  padding: 12px 20px 12px 10px;
+}
+.cd-form input.has-border {
+  border: 1px solid #d2d8d8;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+
+
+.cd-form input[type=submit] {
+  padding: 16px 0;
+  cursor: pointer;
+  background: #A2B5CD;
+  color: #FFF;
+  font-weight: bold;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  margin-left:5%;
+}
+.no-touch .cd-form input[type=submit]:hover, .no-touch .cd-form input[type=submit]:focus {
+  background: #3599ae;
+  outline: none;
+}
+
+.cd-form-message {
+  padding: 1.4em 1.4em 0;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+
+.cd-form-bottom-message {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -30px;
+  text-align: center;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+
+.cd-close-form {
+  /* form X button on top right */
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 0;
+  top: -40px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.login_sign{
+	width:100%;
+	height:20%;
+	margin-top:12px;
+	display:inline;
+
+}
+
+.login_in{
+
+}
+
+
+.sign_up{
+
+	display:none;
+}
+
+
+.sign_up_appear{
+	margin-right:0;
+
+    width:48%;
+    BACKGROUND: #3599ae;
+	margin-left:54%;
+	height:46px;
+	text-align:center;
+	margin-top:0;
+	float:left;
+}
+
+
+.hide_login{
+	display:none;
+}
+
+.hide_login_color{
+	width:52%;
+	height:46px;
+	margin-left:0;
+	float:left;
+	text-align:center;
+}
+
+.sign_appear_color
+{
+	width:48%;
+	height:46px;
+	text-align:center;
+	margin-left:52%;
+	BACKGROUND: #3599ae;
+}
+
+.login_in_wrap_up{
+
+	BACKGROUND: #3599ae;
+	width:52%;
+	height:46px;
+	margin-left:0px;
+	float:left;
+	text-align:center;
+
+}
+
+.sign_up_wrap_up{
+
+	width:48%;
+	height:46px;
+	text-align:center;
+	margin-left:50%;
+
+}
+
+
+
+
+.form_title{
+
+font-weight:bold;
+font-family:Buxton Sketch;
+text-transform:uppercase;
+font-size: 25px;
+text-decoration:none;
+list-style-type:none;
+display:inline;
+padding: 40px;
+text-decoration:none;
+color:#FFFFFF;
+}
+
+.form{
+text-align:left;
+font-weight:bold;
+font-family:Buxton Sketch;
+text-transform:uppercase;
+font-size: 25px;
+color:#FFFFFF;
+}
+
+.login
+{
+font-weight:bold;
+font-family:Buxton Sketch;
+text-transform:uppercase;
+font-size: 25px;
+color:#FFFFFF;
+
+}
+
+
+.cd-close-form {
+  /* form X button on top right */
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 0;
+  top: -40px;
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}

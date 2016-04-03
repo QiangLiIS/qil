@@ -1,5 +1,4 @@
-# java-getting-started [![Build Status](https://travis-ci.org/infsci2560sp16/testassignment4-BrianKolowitz.svg)](https://travis-ci.org/infsci2560sp16/testassignment4-BrianKolowitz)
-
+# java-getting-started
 
 A barebones Java app, which can easily be deployed to Heroku.  
 
@@ -37,4 +36,3 @@ $ heroku open
 For more information about using Java on Heroku, see these Dev Center articles:
 
 - [Java on Heroku](https://devcenter.heroku.com/categories/java)
-- bk

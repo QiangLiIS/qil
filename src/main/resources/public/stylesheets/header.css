@@ -1,0 +1,74 @@
+
+.page-header
+{
+background-color:#FFFFE0;
+height:82px; 
+width:100%;
+margin: 0
+}
+
+
+.header-logo
+{
+height:50px;
+margin-top:15px;
+margin-left:300px;
+width:50px
+}
+
+
+
+
+header.page-header a{
+color:#000000;text-decoration:none
+}
+
+header.page-header a:visited{
+color:#000000;
+text-decoration:none
+}
+
+header.page-header a:active,header.page-header a:hover{
+color:#EEAEEE;
+text-decoration:none
+}
+
+header.page-header .download-paper a,header.page-header .download-paper a:visited
+{
+border:2px solid #000000;
+border-radius:20px;
+color:#000000;
+padding:6px 14px
+}
+
+header.page-header .download-paper a:hover,header.page-header .download-paper a:visited:hover
+{
+background-color:#000000;color:#FFFFFF
+}
+
+
+
+.header-nav{
+display:inline-block;
+font-size:17px;
+font-weight:bold;
+margin-left:280px;
+font-family:Buxton Sketch;
+text-transform:uppercase
+}
+
+
+.header-ul
+{
+width:500px;
+height:40px;
+line-height:10px;
+padding:10px 30px
+}
+
+.header-li
+{
+padding:0 20px;
+display:inline
+}
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<user_profile
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="user.xsd"
+>
+  <name_header>smith</name_header>
+  <user>
+    <user_name name="smith"  />
+    <user_image>picture/test.jpg</user_image>
+    <num_timelines   n_timelines="2"/>
+  </user>
+  <timeline>
+    <description>list the timelines here; open this page with chrome may block some contents while loading an XML file,  open it in IE. </description>
+    <tag1>sport</tag1>
+    <num_events1>10</num_events1>
+    <tag2>study</tag2>
+    <num_events2>3</num_events2>
+  </timeline>
+</user_profile>
