@@ -28,5 +28,11 @@
   "bugs": {
     "url": "https://github.com/infsci2560sp16/full-stack-web-project-AlanZY/issues"
   },
-  "homepage": "https://github.com/infsci2560sp16/full-stack-web-project-AlanZY#readme"
+  "homepage": "https://github.com/infsci2560sp16/full-stack-web-project-AlanZY#readme",
+  "dependencies": {
+    "bower": "0.6.x"
+},
+"scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install"
+}
 }
