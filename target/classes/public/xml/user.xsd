@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="user_profile">
+   <xs:complexType>
+      <xs:sequence>
+         <xs:element name="name_header" type="xs:string"/>
+         <xs:element name="user">
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="user_name" >
+                    <xs:complexType>
+                       <xs:attribute name="name" type="xs:string" use="required" >
+                       </xs:attribute>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="user_image" type="xs:string" />
+                  <xs:element name="num_timelines" >
+                  <xs:complexType>
+                    <xs:attribute name="n_timelines" type="xs:integer" use="required" >
+                    </xs:attribute>
+                  </xs:complexType>
+                </xs:element>
+               </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+        <xs:element name="timeline">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="description" type="xs:string" fixed="list the timelines here; open this page with chrome may block some contents while loading an XML file,  open it in IE." />
+                <xs:element name="tag1" type="xs:string"/>
+                <xs:element name="num_events1" >
+                   <xs:simpleType>
+                     <xs:restriction base="xs:integer">
+                     <xs:minInclusive value="0" />
+                     <xs:maxInclusive value="120" />
+                   </xs:restriction>
+                 </xs:simpleType>
+
+               </xs:element>
+               <xs:element name="tag2" type="xs:string"/>
+               <xs:element name="num_events2" >
+                  <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                    <xs:minInclusive value="0" />
+                    <xs:maxInclusive value="120" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+
+              </xs:sequence>
+           </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+ </xs:element>
+
+ </xs:schema>

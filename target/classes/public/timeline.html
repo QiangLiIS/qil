@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title> timeline </title>
+
+<link rel="stylesheet" href="stylesheets/header.css">
+<link rel="stylesheet" href="stylesheets/timeline.css">
+<link rel="stylesheet" href="stylesheets/footer.css">
+<link rel="stylesheet" href="stylesheets/login.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="js/changetimeline.js" type="text/javascript"></script>
+<script src="js/login.js" type="text/javascript"></script>
+<script src="js/timeline_Ajax.js" type="text/javascript"></script>
+
+
+
+
+</head>
+<!-- left: connect with database
+           edit                     -->
+
+<body>
+
+<!-- header -->
+<header class="page-header">
+
+
+        <a href="index.html" ><img src="picture/logo.png" class="header-logo" alt="logo"></a>
+
+		     <nav class="header-nav">
+                 <ul class="header-ul">
+                     <li class="header-li"><a href="recommendedation">recommended</a></li>
+                     <li class="header-li"><a href="contact.html">contact</a></li>
+                     <li class="download-paper header-li"><a href="userpage.html"   id="header_username">username</a>
+                     </li>
+                 </ul>
+            </nav>
+
+</header>
+<!-- header end -->
+
+<!-- timeline -->
+
+<section class="cd-timeline cd-container" id="section">
+
+
+	<div class="cd-timeline-block" id="block1">
+		<div class="cd-timeline-img " id="image1">
+
+		</div>
+
+		<div class="cd-timeline-content" id="content1">
+			<h2 id="h1">test1 sport</h2>
+			<p id="p1">content sport</p>
+
+      <a href="javascript:void(0);" id="button1" class="cd-read-more" onclick="show_edit(event, 'div_timeline_edit', this.id)" >edit</a>
+		  <a href="javascript:void(0);" id="button2" class="cd-read-more" onclick="show_add(event,'div_timeline', this.id);">add</a>
+			<span class="cd-date">2015-01-06</span>
+		</div>
+
+	</div>
+
+
+	<div class="cd-timeline-block">>
+	    <div class="cd-timeline-img "  id="image2" >
+
+		</div>
+
+		<div class="cd-timeline-content" id="content2"  >
+			<h2 id="h2">test2 EXERCISE</h2>
+			<p id="p2">content EXERCISE</p>
+
+			<a href="#" class="cd-read-more" onClick="edit()">add</a>
+			<span class="cd-date">2015-02-06</span>
+	    </div>
+	</div>
+
+
+
+		<div class="cd-timeline-block" >
+	    <div class="cd-timeline-img "  id="image3">
+
+		</div>
+
+		<div class="cd-timeline-content" id="contnet3">
+			<h2 id="h3">test3 EXERCISE</h2>
+			<p id="p3">content EXERCISE</p>
+
+      <a href="#" class="cd-read-more" onclick="show_add(event,'div_timeline');">add</a>
+      <a href="#" class="cd-read-more" onclick="show_edit(event,'div_timeline_edit');">edit</a>
+		<!--  <a href="#" class="cd-read-more" onClick="edit()">edit</a>   -->
+			<span class="cd-date">2015-03-06</span>
+	    </div>
+	</div>
+
+
+</section>
+<!-- timeline end -->
+
+ <div id="div_timeline" class="div_timeline"  style="display:none">
+<div class="login_in" id='login_in'>
+  <label class="change-title">Add</label>
+    <form class="change-form" >
+       <div>
+       <br>
+      <div class="selection_div"  >
+
+
+        <select id="select_color" onchange="change_color()" >
+        <option>red</option>
+        <option>blue</option>
+        <option>yellow</option>
+        <option>purple</option>
+        </select>
+      </div>
+
+      <div class="sample" id="sample">   </div>
+      <br>
+      </div>
+
+
+         <p>
+        <label class="form-timeline">event</label>
+        <input class="full-width has-padding has-border" id="change-event"  type="text" placeholder="event">
+      </p>
+
+      <p>
+        <label class="form-timeline">content</label>
+        <textarea class="full-width-content has-padding has-border" id="change-content"  placeholder="content"></textarea>
+      </p>
+
+
+      <p>
+        <input class="  change-button" type="button" onclick="addItem()" value="Submit">
+      </p>
+    </form>
+  </div>
+
+</div>
+
+
+
+
+<!-- change the content -->
+
+ <div id="div_timeline_edit" class="div_timeline"  style="display:none">
+<div class="login_in" id='login_in_1'>
+  <label class="change-title">EDIT</label>
+    <form class="change-form" >
+       <div>
+       <br>
+      <div class="selection_div"  >
+
+
+        <select id="select_color_edit" onchange="change_color_edit()" >
+        <option>red</option>
+        <option>blue</option>
+        <option>yellow</option>
+        <option>purple</option>
+        </select>
+      </div>
+
+      <div class="sample" id="sample_edit">   </div>
+      <br>
+      </div>
+
+
+         <p>
+        <label class="form-timeline">event</label>
+        <input class="full-width has-padding has-border" id="change-event-edit"  type="text" placeholder="event">
+      </p>
+
+      <p>
+        <label class="form-timeline">content</label>
+        <textarea class="full-width-content has-padding has-border" id="change-content-edit"  placeholder="content"></textarea>
+      </p>
+
+
+      <p>
+        <input class="change-button" type="button" onclick="Edit()" value="Change">
+      </p>
+    </form>
+  </div>
+
+</div>
+
+
+
+
+<!-- change timeline -->
+
+<p id="demo"></p>
+
+
+
+
+
+
+
+
+<!-- change timeline end -->
+
+</body>
+
+
+
+</html>
