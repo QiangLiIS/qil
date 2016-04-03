@@ -1,0 +1,32 @@
+{
+  "name": "full-stack-web",
+  "version": "1.0.0",
+  "dependencies": {
+    "grunt-cli": "0.1.13"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-qunit": "^0.7.0",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-w3c-html-validation": "^0.1.7"
+  },
+  "description": "A barebones Java app, which can easily be deployed to Heroku.",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infsci2560sp16/full-stack-web-project-AlanZY.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/infsci2560sp16/full-stack-web-project-AlanZY/issues"
+  },
+  "homepage": "https://github.com/infsci2560sp16/full-stack-web-project-AlanZY#readme"
+}
