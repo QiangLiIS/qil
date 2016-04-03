@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script>
+    var uniqueId = function() {
+      return 'id-' + Math.random().toString(36).substr(2, 16);
+    };
+    function addItem() {
+      var textToAdd = $('#text-to-add').val();
+      var paraId = uniqueId();
+
+      var $content = $('#div1');
+      $content.append('<p id="' + paraId + '">' + textToAdd + '</p>');
+      var $btn = $('<input type="button" value="x" />');
+      $btn.click(function() { removeItem(this, paraId); });
+      $content.append($btn);
+    }
+    function removeItem(clicked, itemId) {
+      $("#" + itemId).remove();
+      $(clicked).remove();
+    }
+  </script>
+</head>
+<body>
+  <p>Hello from INFSCI2560</p>
+  <input type="text" id="text-to-add" /><input type="button" onclick="addItem()" value="Add Item" /> <br/>
+  <div id="div1">
+    <ul>
+      <li>
+        <span>text</span>
+        <input type="button" value="x"/>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
