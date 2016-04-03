@@ -9,7 +9,7 @@ $(document).ready(function() {
 	    //called when complete
 	  },
 	  success: function(data, textStatus, xhr) {
-	  	var result1=JSON.parse(data);
+	  	var result1=data;
 	   var ta = $('.result-body').find('table').find('tbody');
 	   		var tr = $('<tr></tr>').appendTo(ta);
 	   		$('<td></td>').text(result1.header_username).appendTo(tr);
