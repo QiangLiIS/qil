@@ -75,7 +75,8 @@ public class Main {
       Statement stmt = connection.createStatement();
 
       stmt.executeUpdate("CREATE TABLE IF NOT EXISTS user_info (user_email varchar(100),  user_password  varchar(30),  user_name  varchar(30) )");
-     stmt.executeUpdate("INSERT INTO users_info VALUES ('user_email','user_password','user_name')");
+     stmt.executeUpdate("INSERT INTO user_info VALUES ('jiz124@pitt.edu','123213','jiezhang')");
+     stmt.executeUpdate("INSERT INTO user_info VALUES ('qil45@pitt.edu','565465','qiangli')");
 
 
       ResultSet rs = stmt.executeQuery("SELECT user_email, user_password FROM user_info");
