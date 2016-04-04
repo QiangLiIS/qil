@@ -197,8 +197,28 @@ public class Main {
                       data.put("username","Smith");
                       String xml= "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" +
                                   "<user_profile>" +
-                                          "<user_name> Allan </user_name>"+
-                                          "<num_timeline> 10 </num_timeline>" +
+                                          "<LastName>Wang</LastName>"+
+                                          "<FirstName>Miao</FirstName>"+
+                                          "<SSN>123456791</SSN>"+
+                                          "<Gender>male</Gender>"+
+                                          "<DOB>8/1/92</DOB>"+
+                                          "<Age>24</Age>"+
+                                          "<Phone>412-5436-4656</Phone>"+
+                                          "<City>pittsburgh</City>"+
+                                          "<State>PA</State>"+
+                                          "<Zipcode>25230</Zipcode>"+
+                                  "</user_profile>"+
+                                  "<user_profile>" +
+                                          "<LastName>Pan</LastName>"+
+                                          "<FirstName>Wei</FirstName>"+
+                                          "<SSN>123456792</SSN>"+
+                                          "<Gender>female</Gender>"+
+                                          "<DOB>5/12/93</DOB>"+
+                                          "<Age>23</Age>"+
+                                          "<Phone>412-5436-4657</Phone>"+
+                                          "<City>pittsburgh</City>"+
+                                          "<State>PA</State>"+
+                                          "<Zipcode>25230</Zipcode>"+
                                   "</user_profile>" ;
                       res.type("text/xml");
                       return xml;
