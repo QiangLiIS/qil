@@ -10,7 +10,7 @@ $(document).ready(function() {
 	  },
 	  success: function(data, textStatus, xhr) {
 	  	var result1=data;
-	  	result1.each(function(index, el) {
+	  	$result1.each(function(index, el) {
 	  		var ta = $('.result-body').find('table').find('tbody');
 	   		var tr = $('<tr></tr>').appendTo(ta);
 	   		$('<td></td>').text(el.header_username).appendTo(tr);
