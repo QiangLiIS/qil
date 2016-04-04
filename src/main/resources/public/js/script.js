@@ -20,7 +20,7 @@ $(document).ready(function() {
           success: function(data)
           {
             alert("succeeded");
-            window.location.href='/other.html';
+            window.location.href='/user_info';
          }
 
         });
