@@ -142,16 +142,31 @@ public class Main {
 
             get("/api/timeline_info", (req, res) -> {
                     Map<String, Object> data = new HashMap<>();
-                    data.put("header_username","Smith");
-                    data.put("title1", "sport");
-                    data.put("content1", "today night, gym");
-                    data.put("image1", "background: #FFC1C1;");
-                    data.put("title2","sport");
-                    data.put("content2", "monday moring, swimming with John");
-                    data.put("image2", "background: #BFEFFF;");
-                    data.put("title3","sport");
-                    data.put("content3", "friday, a basketball competition");
-                    data.put("image3", "background: #FFC1C1;");
+                    Map<String, Object> data1 = new HashMap<>();
+
+                    Map<String, Object> data2 = new HashMap<>();
+                    data1.put("Lastname","Li");
+                    data1.put("FirstName", "Xia");
+                    data1.put("SSN", "123456789");
+                    data1.put("Gender", "male");
+                    data1.put("DOB","3/21/92");
+                    data1.put("Age", "24");
+                    data1.put("Phone", "412-5436-4654");
+                    data1.put("City","Pittsburgh");
+                    data1.put("State", "PA");
+                    data1.put("ZipCode", "15232");
+                    data2.put("FirstName", "Xia");
+                    data2.put("SSN", "123456789");
+                    data2.put("Gender", "male");
+                    data2.put("DOB","3/21/92");
+                    data2.put("Age", "24");
+                    data2.put("Phone", "412-5436-4654");
+                    data2.put("City","Pittsburgh");
+                    data2.put("State", "PA");
+                    data2.put("ZipCode", "15232");
+
+                    data.put("person",data1);
+                    data.put("person",data2);
                     return data;
                 }, gson::toJson);
 

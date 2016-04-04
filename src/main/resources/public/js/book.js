@@ -10,18 +10,20 @@ $(document).ready(function() {
 	  },
 	  success: function(data, textStatus, xhr) {
 	  	var result1=data;
-	   var ta = $('.result-body').find('table').find('tbody');
+	  	result1.each(function(index, el) {
+	  		var ta = $('.result-body').find('table').find('tbody');
 	   		var tr = $('<tr></tr>').appendTo(ta);
-	   		$('<td></td>').text(result1.header_username).appendTo(tr);
-	  		$('<td></td>').text(result1.title1).appendTo(tr);
-	  		$('<td></td>').text(result1.content1).appendTo(tr);
-	  		$('<td></td>').text(result1.title2).appendTo(tr);
-	  		$('<td></td>').text(result1.content2).appendTo(tr);
-	  		$('<td></td>').text(result1.title3).appendTo(tr);
-	  		$('<td></td>').text(result1.content3).appendTo(tr);	
-	  		$('<td></td>').text(result1.title1).appendTo(tr);
-	  		$('<td></td>').text(result1.title1).appendTo(tr);
-	  		$('<td></td>').text(result1.title1).appendTo(tr);
+	   		$('<td></td>').text(el.header_username).appendTo(tr);
+	  		$('<td></td>').text(el.title1).appendTo(tr);
+	  		$('<td></td>').text(el.content1).appendTo(tr);
+	  		$('<td></td>').text(el.title2).appendTo(tr);
+	  		$('<td></td>').text(el.content2).appendTo(tr);
+	  		$('<td></td>').text(el.title3).appendTo(tr);
+	  		$('<td></td>').text(el.content3).appendTo(tr);	
+	  		$('<td></td>').text(el.title1).appendTo(tr);
+	  		$('<td></td>').text(el.title1).appendTo(tr);
+	  		$('<td></td>').text(el.title1).appendTo(tr);
+	  	});
 	  },
 	  error: function(xhr, textStatus, errorThrown) {
 	    alert("error");
