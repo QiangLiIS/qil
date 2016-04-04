@@ -1,28 +1,31 @@
 $(document).ready(function() {
-	// jQuery.ajax({
-	//   url: '',
-	//   type: 'GET',
-	//   dataType: 'json',
-	//   complete: function(xhr, textStatus) {
-	//     //called when complete
-	//   },
-	//   success: function(data, textStatus, xhr) {
-	//    var ingredient = data;
-	//    for (var i = 0; i < ingredient.length; i++) {
-	//    	if (ingredient[i].HOI&&ingredient[i].PRR) {
-	//    	var search_result =	$('<tr></tr>');
-	//    	$('<td>'+ingredient[i].HOI+'</td>').appendTo(search_result);
-	//    	$('<td>COUNT</td>').appendTo(search_result);
-	//    	$('<td>'+ingredient[i].PRR+'</td>').appendTo(search_result);
-	//    	$('<td>link</td>').appendTo(search_result);
-	//    	search_result.appendTo('tbody');
-	//    }
-	// }
-	//   },
-	//   error: function(xhr, textStatus, errorThrown) {
-	//     alert("error");
-	//   }
-	// });
+	$('#submit').click(function()
+  {
+
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+    //  var obj = $('#signin-input').serializeJSON();
+      // var send = JSON.stringify(obj);
+       //var send=password;
+
+
+         var send= JSON.stringify({ "signup-password": password , "signup-email": email});
+      $.ajax({
+          contentType:'application/json',
+          url:"/adduser",
+          type:"POST",
+          datatype: "json",
+          data: send,
+          success: function(data)
+          {
+            alert("succeeded");
+            window.location.href='/other.html';
+         }
+
+        });
+    }
+  );
 	
 	$('.searchoption').bind('click', function(event) {
 		$('.searchoption').find('ul').animate({

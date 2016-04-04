@@ -114,6 +114,7 @@ public class Main {
         String email = obj.getString("signup-email");
         String password = obj.getString("signup-password");
        Statement stmt = connection.createStatement();
+       stmt.executeUpdate("CREATE TABLE IF NOT EXISTS user_info (user_email varchar(100),  user_password  varchar(30),  user_name  varchar(30) )");
        stmt.executeUpdate("INSERT INTO user_info(user_email, user_password, user_name)" +
                 "VALUES('" + email + "', '" + password + "', 'null')");
        return req.body();

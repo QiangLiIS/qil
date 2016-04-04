@@ -10,7 +10,7 @@
 
 <div class="container">
 
-  <h1>ad</h1>
+  <h1>email informaiton</h1>
     <ul>
     <#list results as x>
       <li> ${x} </li>
