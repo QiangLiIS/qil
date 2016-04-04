@@ -193,8 +193,6 @@ public class Main {
 
                     get("/api/info", (req, res ) ->
                     {
-                      Map<String, Object> data = new HashMap<>();
-                      data.put("username","Smith");
                       String xml= "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" +
                                   "<person>
     <LastName>Li</LastName>

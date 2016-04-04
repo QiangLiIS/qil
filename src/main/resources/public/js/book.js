@@ -10,7 +10,6 @@ $(document).ready(function() {
 	  },
 	  success: function(data, textStatus, xhr) {
 	  	var result1=data;
-	  		
 	  		var ta = $('.result-body').find('table').find('tbody');
 	   		var tr = $('<tr></tr>').appendTo(ta);
 	   		$('<td></td>').text(result1.LastName).appendTo(tr);
