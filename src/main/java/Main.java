@@ -193,68 +193,13 @@ public class Main {
 
                     get("/api/info", (req, res ) ->
                     {
+                      Map<String, Object> data = new HashMap<>();
+                      data.put("username","Smith");
                       String xml= "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" +
-                                  "<person>
-    <LastName>Li</LastName>
-    <FirstName>Xia</FirstName>
-    <SSN>123456789</SSN>
-    <Gender>male</Gender>
-    <DOB>3/21/92</DOB>
-    <Age>24</Age>
-    <Phone>412-6436-4654</Phone>
-    <City>pittsburgh</City>
-    <State>PA</State>
-    <Zipcode>15232</Zipcode>
-  </person>
-  <person>
-    <LastName>Zhang</LastName>
-    <FirstName>Xiao</FirstName>
-    <SSN>123456790</SSN>
-    <Gender>male</Gender>
-    <DOB>4/13/91</DOB>
-    <Age>25</Age>
-    <Phone>412-5436-4655</Phone>
-    <City>pittsburgh</City>
-    <State>PA</State>
-    <Zipcode>15331</Zipcode>
-  </person>
-  <person>
-    <LastName>Wang</LastName>
-    <FirstName>Miao</FirstName>
-    <SSN>123456791</SSN>
-    <Gender>male</Gender>
-    <DOB>8/1/92</DOB>
-    <Age>24</Age>
-    <Phone>412-5436-4656</Phone>
-    <City>pittsburgh</City>
-    <State>PA</State>
-    <Zipcode>25230</Zipcode>
-  </person>
-  <person>
-    <LastName>Pan</LastName>
-    <FirstName>Wei</FirstName>
-    <SSN>123456792</SSN>
-    <Gender>female</Gender>
-    <DOB>5/12/93</DOB>
-    <Age>23</Age>
-    <Phone>412-5436-4657</Phone>
-    <City>pittsburgh</City>
-    <State>PA</State>
-    <Zipcode>15232</Zipcode>
-  </person>
-  <person>
-    <LastName>Liu</LastName>
-    <FirstName>Jing</FirstName>
-    <SSN>123456793</SSN>
-    <Gender>female</Gender>
-    <DOB>7/15/91</DOB>
-    <Age>25</Age>
-    <Phone>412-5436-4658</Phone>
-    <City>pittsburgh</City>
-    <State>PA</State>
-    <Zipcode>15321</Zipcode>
-  </person>
-</customer>" ;
+                                  "<user_profile>" +
+                                          "<user_name> Allan </user_name>"+
+                                          "<num_timeline> 10 </num_timeline>" +
+                                  "</user_profile>" ;
                       res.type("text/xml");
                       return xml;
                     });
