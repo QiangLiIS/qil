@@ -7,30 +7,29 @@ $(document).ready(function() {
 	    //called when complete
 	  },
 	  success: function(xml) {
-	  	alert(xml[1],children('Lastname'));
-	  	    $(xml).find('person').each(function(index, el) {
-	   		var lastname = $(this).children('Lastname').text();
-	   		var firstname = $(this).children('Firstname').text();
-	   		var ssn = $(this).children('SSN').text();
-	   		var gender = $(this).children('Gender').text();
-	   		var DOB= $(this).children('DOB').text();
-	   		var age = $(this).children('Age').text();
-	   		var phone = $(this).children('Phone').text();
-	   		var city = $(this).children('City').text();
-	   		var state = $(this).children('State').text();
-	   		var zipcode = $(this).children('Zipcode').text();
+	  	    $(xml).find('user_profile>').each(function(index, el) {
+	   		var lastname = $(this).children('user_name').text();
+	   		var firstname = $(this).children('num_timeline').text();
+	   		// var ssn = $(this).children('SSN').text();
+	   		// var gender = $(this).children('Gender').text();
+	   		// var DOB= $(this).children('DOB').text();
+	   		// var age = $(this).children('Age').text();
+	   		// var phone = $(this).children('Phone').text();
+	   		// var city = $(this).children('City').text();
+	   		// var state = $(this).children('State').text();
+	   		// var zipcode = $(this).children('Zipcode').text();
 	   		var ta = $('.result-body').find('table').find('tbody');
 	   		var tr = $('<tr></tr>').appendTo(ta);
 	   		$('<td></td>').text(lastname).appendTo(tr);
 	   		$('<td></td>').text(firstname).appendTo(tr);
-	   		$('<td></td>').text(ssn).appendTo(tr);
-	   		$('<td></td>').text(gender).appendTo(tr);
-	   		$('<td></td>').text(DOB).appendTo(tr);
-	   		$('<td></td>').text(age).appendTo(tr);
-	   		$('<td></td>').text(phone).appendTo(tr);
-	   		$('<td></td>').text(city).appendTo(tr);
-	   		$('<td></td>').text(state).appendTo(tr);
-	   		$('<td></td>').text(zipcode).appendTo(tr);
+	   		// $('<td></td>').text(ssn).appendTo(tr);
+	   		// $('<td></td>').text(gender).appendTo(tr);
+	   		// $('<td></td>').text(DOB).appendTo(tr);
+	   		// $('<td></td>').text(age).appendTo(tr);
+	   		// $('<td></td>').text(phone).appendTo(tr);
+	   		// $('<td></td>').text(city).appendTo(tr);
+	   		// $('<td></td>').text(state).appendTo(tr);
+	   		// $('<td></td>').text(zipcode).appendTo(tr);
 	   })
 	  },
 	  error: function(xhr, textStatus, errorThrown) {
