@@ -56,7 +56,7 @@ public class Main {
         }
 
         attributes.put("results", output);
-        return new ModelAndView(attributes, "db2.ftl");
+        return new ModelAndView(attributes, "db.ftl");
       } catch (Exception e) {
         attributes.put("message", "There was an error: " + e);
         return new ModelAndView(attributes, "error.ftl");
@@ -75,7 +75,7 @@ public class Main {
       Statement stmt = connection.createStatement();
 
       stmt.executeUpdate("CREATE TABLE IF NOT EXISTS user_info (user_email varchar(100),  user_password  varchar(30),  user_name  varchar(30) )");
-    //  stmt.executeUpdate("INSERT INTO users_info VALUES ('user_email','user_password','user_name')");
+     stmt.executeUpdate("INSERT INTO users_info VALUES ('user_email','user_password','user_name')");
 
 
       ResultSet rs = stmt.executeQuery("SELECT user_email, user_password FROM user_info");
