@@ -7,6 +7,7 @@ $(document).ready(function() {
 	    //called when complete
 	  },
 	  success: function(xml) {
+	  	alert(xml[1],children('Lastname'));
 	  	    $(xml).find('person').each(function(index, el) {
 	   		var lastname = $(this).children('Lastname').text();
 	   		var firstname = $(this).children('Firstname').text();

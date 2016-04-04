@@ -10,21 +10,19 @@ $(document).ready(function() {
 	  },
 	  success: function(data, textStatus, xhr) {
 	  	var result1=data;
-	  	for (var i = 0; i < result1.length; i++) {
 	  		
 	  		var ta = $('.result-body').find('table').find('tbody');
 	   		var tr = $('<tr></tr>').appendTo(ta);
-	   		$('<td></td>').text(result1[i].LastName).appendTo(tr);
-	  		$('<td></td>').text(result1[i].FirstName).appendTo(tr);
-	  		$('<td></td>').text(result1[i].SSN).appendTo(tr);
-	  		$('<td></td>').text(result1[i].Gender).appendTo(tr);
-	  		$('<td></td>').text(result1[i].DOB).appendTo(tr);
-	  		$('<td></td>').text(result1[i].Age).appendTo(tr);
-	  		$('<td></td>').text(result1[i].Phone).appendTo(tr);	
-	  		$('<td></td>').text(result1[i].City).appendTo(tr);
-	  		$('<td></td>').text(result1[i].State).appendTo(tr);
-	  		$('<td></td>').text(result1[i].ZipCode).appendTo(tr);
-	  	}
+	   		$('<td></td>').text(result1.LastName).appendTo(tr);
+	  		$('<td></td>').text(result1.FirstName).appendTo(tr);
+	  		$('<td></td>').text(result1.SSN).appendTo(tr);
+	  		$('<td></td>').text(result1.Gender).appendTo(tr);
+	  		$('<td></td>').text(result1.DOB).appendTo(tr);
+	  		$('<td></td>').text(result1.Age).appendTo(tr);
+	  		$('<td></td>').text(result1.Phone).appendTo(tr);	
+	  		$('<td></td>').text(result1.City).appendTo(tr);
+	  		$('<td></td>').text(result1.State).appendTo(tr);
+	  		$('<td></td>').text(result1.ZipCode).appendTo(tr);
 	  		
 	  },
 	  error: function(xhr, textStatus, errorThrown) {
