@@ -142,31 +142,16 @@ public class Main {
 
             get("/api/timeline_info", (req, res) -> {
                     Map<String, Object> data = new HashMap<>();
-                    Map<String, Object> data1 = new HashMap<>();
-
-                    Map<String, Object> data2 = new HashMap<>();
-                    data1.put("Lastname","Li");
-                    data1.put("FirstName", "Xia");
-                    data1.put("SSN", "123456789");
-                    data1.put("Gender", "male");
-                    data1.put("DOB","3/21/92");
-                    data1.put("Age", "24");
-                    data1.put("Phone", "412-5436-4654");
-                    data1.put("City","Pittsburgh");
-                    data1.put("State", "PA");
-                    data1.put("ZipCode", "15232");
-                    data2.put("FirstName", "Xia");
-                    data2.put("SSN", "123456789");
-                    data2.put("Gender", "male");
-                    data2.put("DOB","3/21/92");
-                    data2.put("Age", "24");
-                    data2.put("Phone", "412-5436-4654");
-                    data2.put("City","Pittsburgh");
-                    data2.put("State", "PA");
-                    data2.put("ZipCode", "15232");
-
-                    data.put("person",data1);
-                    data.put("person",data2);
+                    data.put("Lastname","Li");
+                    data.put("FirstName", "Xia");
+                    data.put("SSN", "123456789");
+                    data.put("Gender", "male");
+                    data.put("DOB","3/21/92");
+                    data.put("Age", "24");
+                    data.put("Phone", "412-5436-4654");
+                    data.put("City","Pittsburgh");
+                    data.put("State", "PA");
+                    data.put("ZipCode", "15232");
                     return data;
                 }, gson::toJson);
 
@@ -211,10 +196,67 @@ public class Main {
                       Map<String, Object> data = new HashMap<>();
                       data.put("username","Smith");
                       String xml= "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" +
-                                  "<user_profile>" +
-                                          "<user_name> Allan </user_name>"+
-                                          "<num_timeline> 10 </num_timeline>" +
-                                  "</user_profile>" ;
+                                  "<person>
+    <LastName>Li</LastName>
+    <FirstName>Xia</FirstName>
+    <SSN>123456789</SSN>
+    <Gender>male</Gender>
+    <DOB>3/21/92</DOB>
+    <Age>24</Age>
+    <Phone>412-6436-4654</Phone>
+    <City>pittsburgh</City>
+    <State>PA</State>
+    <Zipcode>15232</Zipcode>
+  </person>
+  <person>
+    <LastName>Zhang</LastName>
+    <FirstName>Xiao</FirstName>
+    <SSN>123456790</SSN>
+    <Gender>male</Gender>
+    <DOB>4/13/91</DOB>
+    <Age>25</Age>
+    <Phone>412-5436-4655</Phone>
+    <City>pittsburgh</City>
+    <State>PA</State>
+    <Zipcode>15331</Zipcode>
+  </person>
+  <person>
+    <LastName>Wang</LastName>
+    <FirstName>Miao</FirstName>
+    <SSN>123456791</SSN>
+    <Gender>male</Gender>
+    <DOB>8/1/92</DOB>
+    <Age>24</Age>
+    <Phone>412-5436-4656</Phone>
+    <City>pittsburgh</City>
+    <State>PA</State>
+    <Zipcode>25230</Zipcode>
+  </person>
+  <person>
+    <LastName>Pan</LastName>
+    <FirstName>Wei</FirstName>
+    <SSN>123456792</SSN>
+    <Gender>female</Gender>
+    <DOB>5/12/93</DOB>
+    <Age>23</Age>
+    <Phone>412-5436-4657</Phone>
+    <City>pittsburgh</City>
+    <State>PA</State>
+    <Zipcode>15232</Zipcode>
+  </person>
+  <person>
+    <LastName>Liu</LastName>
+    <FirstName>Jing</FirstName>
+    <SSN>123456793</SSN>
+    <Gender>female</Gender>
+    <DOB>7/15/91</DOB>
+    <Age>25</Age>
+    <Phone>412-5436-4658</Phone>
+    <City>pittsburgh</City>
+    <State>PA</State>
+    <Zipcode>15321</Zipcode>
+  </person>
+</customer>" ;
                       res.type("text/xml");
                       return xml;
                     });
