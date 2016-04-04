@@ -7,7 +7,7 @@ $(document).ready(function() {
 	    //called when complete
 	  },
 	  success: function(xml) {
-	  	    $(xml).find('user_profile>').each(function(index, el) {
+	  	    $(xml).find('user_profile').each(function(index, el) {
 	   		var lastname = $(this).children('user_name').text();
 	   		var firstname = $(this).children('num_timeline').text();
 	   		// var ssn = $(this).children('SSN').text();
