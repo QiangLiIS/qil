@@ -196,6 +196,7 @@ public class Main {
                       Map<String, Object> data = new HashMap<>();
                       data.put("username","Smith");
                       String xml= "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" +
+                                  "<customer>"+
                                   "<user_profile>" +
                                           "<LastName>Wang</LastName>"+
                                           "<FirstName>Miao</FirstName>"+
@@ -219,7 +220,8 @@ public class Main {
                                           "<City>pittsburgh</City>"+
                                           "<State>PA</State>"+
                                           "<Zipcode>25230</Zipcode>"+
-                                  "</user_profile>" ;
+                                  "</user_profile>" +
+                                  "</customer>";
                       res.type("text/xml");
                       return xml;
                     });
